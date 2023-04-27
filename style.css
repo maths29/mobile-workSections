@@ -13,7 +13,6 @@ body {
   white-space: nowrap;
   color: #6070ff;
   padding-left: 20px;
-  
 }
 
 .topic {
@@ -88,7 +87,6 @@ body {
   width: 90%;
   padding-left: 0;
   gap: 3%;
- 
 }
 
 .inside {
@@ -177,23 +175,6 @@ li {
 
 a {
   text-decoration: none;
-}
-
-
-.structure {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 16px;
-  gap: 50%;
-  width: 90%;
-  border-radius: 12px;
-  box-sizing: border-box;
-  border: 1px solid #dfe1e6;
-  background: #fff;
-  margin-top: 120px;
-  align-content: right;
-  min-width: 375px;
 }
 
 .structure2 {
@@ -369,7 +350,6 @@ ul ul {
   border-radius: 12px;
 }
 
-
 .smart {
   display: flex;
   flex-direction: column;
@@ -408,6 +388,7 @@ ul ul {
 .contact-space2 {
   text-align: center;
 }
+
 .form2 {
   display: flex;
   flex-direction: column;
@@ -415,6 +396,7 @@ ul ul {
   gap: 20px;
   width: 97%;
 }
+
 input {
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -440,7 +422,6 @@ textarea::placeholder {
 }
 
 .submit {
-  
   padding: 12px 16px;
   background: #fff;
   border-radius: 8px;
@@ -466,6 +447,7 @@ textarea::placeholder {
   border-radius: 12px;
   color: #fff;
 }
+
 .contact-background {
   position: absolute;
   left: 0;
