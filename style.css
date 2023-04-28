@@ -111,12 +111,9 @@ body {
 }
 
 .structure {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 16px;
-  gap: 50%;
-  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   border-radius: 12px;
   box-sizing: border-box;
   border: 1px solid #dfe1e6;
@@ -165,7 +162,7 @@ body {
   align-items: flex-start;
   gap: 8%;
   margin-top: 0;
-  margin-left: 12px;
+  margin-left: 3px;
   padding: 0;
 }
 
@@ -178,12 +175,9 @@ a {
 }
 
 .structure2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 16px;
-  gap: 50%;
-  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   border-radius: 12px;
   box-sizing: border-box;
   border: 1px solid #dfe1e6;
@@ -270,7 +264,7 @@ button:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 16px;
+  margin-left: 1px;
 }
 
 .pinned:hover {
@@ -321,6 +315,13 @@ ul ul {
   margin-left: 0;
   margin-right: 16px;
   margin-bottom: 5px;
+}
+
+.secp {
+  display: flex;
+  flex-direction: column;
+  margin-left: -18px;
+  margin-top: 42px;
 }
 
 .squire h3 {

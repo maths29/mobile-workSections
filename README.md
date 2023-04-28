@@ -63,8 +63,9 @@ In order to run this project you need fork or clone the repository
 ### Setup
 
 Clone this repository to your folder.
-+ cd <folder-url>
-+ git clone <repository-url>
++ cd your_folder_name (where you want to clone the project)
+  git clone https://github.com/maths29/mobile-workSections.git
+
 
 
 ### Install
