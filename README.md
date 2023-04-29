@@ -47,6 +47,14 @@
 # key feature
 the key feature is the header which is a navigation bar and the headline section 
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+
+
+- [Live Demo Link](https://maths29.github.io/mobile-workSections/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- GETTING STARTED -->
 
@@ -100,7 +108,7 @@ You can deploy this project by using any hosting services you prefare
 
 - GitHub: [@githubhandle](https://github.com/maths29)
 - Twitter: [@twitterhandle](https://twitter.com/maths29)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/iwu-john)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/iwu-john-b92b01148/ )
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
