@@ -11,20 +11,21 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-  margin-top: 20px;
   background: white;
-}
-
-.active {
-  margin-left: 30px;
+  padding: 10px 10px;
+  margin-top: -8px;
 }
 
 nav {
-  top: 50px;
-  left: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -10px;
+  margin-left: -16px;
+  padding: 20px;
+  position: fixed;
+  background: #fff;
 }
 
 .topnav {
@@ -34,8 +35,9 @@ nav {
 }
 
 .head-text {
-  width: 375px;
   background: white;
+  border-bottom-left-radius: 50px;
+  margin: -10px;
 }
 
 .head-text h1 {
@@ -53,17 +55,15 @@ nav {
 }
 
 #img {
-  position: absolute;
-  width: 397px;
-  height: 587.15px;
-  left: 4px;
-  top: -52px;
   background: url(img/header-shapes\ mobile.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding: 10px 30px;
+}
+#img h1 {
+  margin-top: 50px;
 }
 
-.text-bottom2 li {
-  list-style: none;
-}
 
 .rectangle-item h2 {
   font-size: 16px;
@@ -76,18 +76,17 @@ nav {
 .text-bottom2 {
   display: flex;
   align-items: flex-start;
-  margin-left: -12px;
+  margin-left: -60px;
   margin-top: -10px;
 }
 
 .social {
   padding: 12px;
-  margin-left: -42px;
-  margin-top: -9px;
 }
 
 .rectangle-item {
   display: flex;
+  margin-top: 40px;
 }
 
 
@@ -227,14 +226,14 @@ a {
   justify-content: space-around;
   width: 57%;
   color: #6070ff;
-  margin: 0;
+  gap: 15px;
+  margin-left: 30px;
 }
 
 .dfirst {
   background-color: #ebebff;
   border-radius: 8px;
-  padding-left: 7px;
-  padding-right: 7px;
+  padding: 2px 12px;
   display: flex;
 }
 
@@ -312,9 +311,9 @@ ul ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 auto;
   gap: 50%;
-  width: 90%;
+  margin-left: -10px;
+  margin-right: -10px;
   box-sizing: border-box;
   border: 1px solid #dfe1e6;
   padding: 14px;
@@ -322,7 +321,7 @@ ul ul {
   background: #fff;
   height: auto;
   border-radius: 12px 70px 12px 12px;
-  min-width: 375px;
+  
 }
 
 .sect {
@@ -344,7 +343,6 @@ ul ul {
   color: #344563;
   width: 90%;
   margin-left: 0;
-  margin-right: 16px;
   margin-bottom: 5px;
 }
 
@@ -390,9 +388,9 @@ ul ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 auto;
   gap: 50%;
-  width: 100%;
+  margin-left: -10px;
+  margin-right: -10px;
   border-radius: 70px 12px 12px 12px;
   box-sizing: border-box;
   border: 1px solid #dfe1e6;
@@ -405,7 +403,6 @@ ul ul {
   background-repeat: no-repeat;
   background-position: absolute;
   background-size: 100% 100%;
-  min-width: 375px;
 }
 
 .contact-space1 {
