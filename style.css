@@ -60,10 +60,10 @@ nav {
   background-position: top;
   padding: 10px 30px;
 }
+
 #img h1 {
   margin-top: 50px;
 }
-
 
 .rectangle-item h2 {
   font-size: 16px;
@@ -80,15 +80,10 @@ nav {
   margin-top: -10px;
 }
 
-.social {
-  padding: 12px;
-}
-
 .rectangle-item {
   display: flex;
   margin-top: 40px;
 }
-
 
 .topic {
   display: flex;
@@ -199,6 +194,7 @@ nav {
   margin-top: 0;
   margin-left: 5px;
   margin-bottom: 120px;
+  padding: 12px;
 }
 
 .social-abt {
@@ -321,7 +317,6 @@ ul ul {
   background: #fff;
   height: auto;
   border-radius: 12px 70px 12px 12px;
-  
 }
 
 .sect {
