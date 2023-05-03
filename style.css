@@ -386,6 +386,7 @@ ul ul {
 .contact-space {
   display: flex;
   flex-direction: column;
+  z-index: 1;
   background: url(./img/cfp.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -488,8 +489,4 @@ textarea::placeholder {
   left: 0;
   width: 540px;
   height: 520px;
-}
-
-.contact-space {
-  z-index: 1;
 }
