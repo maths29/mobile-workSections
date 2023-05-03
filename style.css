@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -273,6 +273,17 @@ button:hover {
   color: #fff;
 }
 
+.pinned {
+  width: 162px;
+  background: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #396df2;
+  letter-spacing: 0.03em;
+}
+
 .pinned:hover {
   background: #6070ff;
   border: 1px solid;
@@ -292,10 +303,11 @@ ul ul {
   margin-right: -10px;
   box-sizing: border-box;
   border: 1px solid #dfe1e6;
-  padding: 14px;
+  padding-bottom: 250px;
+  padding-left: 14px;
+  padding-right: 14px;
   margin-top: 30%;
   background: #fff;
-  height: auto;
   border-radius: 12px 70px 12px 12px;
 }
 
@@ -360,29 +372,30 @@ ul ul {
 }
 
 .form {
+  background: #6070ff;
+  color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 50%;
-  margin-left: -10px;
-  margin-right: -10px;
+  padding: 50px 14px;
+  margin-top: -60px;
   border-radius: 70px 12px 12px 12px;
   box-sizing: border-box;
   border: 1px solid #dfe1e6;
-  padding: 14px;
-  margin-top: 32px;
-  background: #6070ff;
-  height: auto;
-  color: #fff;
-  background-image: url(./img/cfp.png);
+}
+
+.contact-space {
+  display: flex;
+  flex-direction: column;
+  background: url(./img/cfp.png);
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: right;
   background-size: contain;
 }
 
 .contact-space1 {
   text-align: center;
-  margin-top: 102px;
+  margin-top: 70px;
+  margin-left: -30px;
 }
 
 .contact-space h3 {
@@ -420,7 +433,7 @@ input {
 
 input::placeholder {
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 500;
   color: #172b4d;
 }
 
@@ -439,6 +452,7 @@ textarea::placeholder {
   font-size: 15px;
   line-height: 24px;
   font-family: "Poppins", sans-serif;
+  color: #b3bac5;
 }
 
 .submit {
@@ -447,7 +461,7 @@ textarea::placeholder {
   border-radius: 8px;
   border: none;
   margin-right: 186px;
-  margin-bottom: 45px;
+  margin-bottom: 10px;
   color: #6070ff;
   font-style: normal;
   font-weight: 500;
