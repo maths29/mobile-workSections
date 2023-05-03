@@ -62,7 +62,7 @@ nav {
 }
 
 #img h1 {
-  margin-top: 50px;
+  margin-top: 60px;
 }
 
 .rectangle-item h2 {
@@ -249,7 +249,7 @@ a {
   font-size: 15px;
   font-weight: 510;
   color: #396df2;
-  padding: 21px;
+  padding: 11px;
   transition-duration: 0.4s;
   border-radius: 8px;
   box-sizing: border-box;
@@ -271,26 +271,6 @@ button:hover {
   background: #2230d2;
   border-radius: 12px;
   color: #fff;
-}
-
-.pinned {
-  background-color: #fff;
-  border: 1px solid #6070ff;
-  font-style: normal;
-  font-size: 17px;
-  font-weight: 510;
-  color: #396df2;
-  padding: 21px;
-  transition: ease-in-out;
-  transition-duration: 0.2s;
-  border-radius: 8px;
-  box-sizing: border-box;
-  width: 162px;
-  height: 48px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 1px;
 }
 
 .pinned:hover {
@@ -396,8 +376,8 @@ ul ul {
   color: #fff;
   background-image: url(./img/cfp.png);
   background-repeat: no-repeat;
-  background-position: absolute;
-  background-size: 100% 100%;
+  background-position: top right;
+  background-size: contain;
 }
 
 .contact-space1 {
@@ -433,6 +413,15 @@ input {
   border-radius: 8px;
   padding: 15px 0 15px 16px;
   width: inherit;
+  font-size: 17px;
+  font-weight: 400;
+  color: #172b4d;
+}
+
+input::placeholder {
+  font-size: 17px;
+  font-weight: 400;
+  color: #172b4d;
 }
 
 textarea {
@@ -471,6 +460,7 @@ textarea::placeholder {
   background: #6070ff;
   color: #fff;
   border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
 }
 
 .submit:active {
