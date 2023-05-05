@@ -538,18 +538,6 @@ textarea::placeholder {
     height: auto;
   }
 
-  .firstS1 .info {
-    font-style: normal;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    width: 90%;
-    gap: 5%;
-    margin-top: 15px;
-    margin-bottom: 1px;
-    margin-left: -17px;
-  }
-
   .info {
     font-style: normal;
     font-size: 18px;
@@ -558,6 +546,18 @@ textarea::placeholder {
     width: 90%;
     gap: 5%;
     margin-top: 20px;
+    margin-bottom: 1px;
+    margin-left: -17px;
+  }
+
+  .firstS1 .info {
+    font-style: normal;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 5%;
+    margin-top: 15px;
     margin-bottom: 1px;
     margin-left: -17px;
   }
@@ -606,19 +606,19 @@ textarea::placeholder {
     margin: 0;
   }
 
-  .firstS1 .act {
-    margin: 0;
-    margin-top: 20px;
-    margin-bottom: 80px;
-    margin-left: -120px;
-    color: #6070ff;
-  }
-
   .act {
     margin: 0;
     margin-top: 25px;
     margin-bottom: 80px;
     margin-left: -125px;
+    color: #6070ff;
+  }
+
+  .firstS1 .act {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: -120px;
     color: #6070ff;
   }
 
@@ -645,7 +645,7 @@ textarea::placeholder {
     width: 48%;
     padding: 0;
   }
-  
+
   .under1 {
     margin-left: -80px;
   }
@@ -659,7 +659,7 @@ textarea::placeholder {
     margin-top: -20px;
     margin-right: -230px;
   }
-  
+
   #framework {
     margin-left: -370px;
   }
@@ -680,19 +680,6 @@ textarea::placeholder {
     color: #fff;
   }
 
-  .firstS1 #caption {
-    font-size: 40px;
-    font-style: bold;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    color: #172b4d;
-    width: 80%;
-    margin-top: -78px;
-    margin-bottom: 1px;
-    margin-left: -75px;
-  }
-
   #caption {
     font-size: 40px;
     font-style: bold;
@@ -704,6 +691,19 @@ textarea::placeholder {
     margin-top: 10px;
     margin-bottom: 1px;
     margin-left: -60px;
+  }
+
+  .firstS1 #caption {
+    font-size: 40px;
+    font-style: bold;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+    width: 80%;
+    margin-top: -78px;
+    margin-bottom: 1px;
+    margin-left: -75px;
   }
 
   .aboutSection {
