@@ -110,12 +110,6 @@ You can deploy this project by using any hosting services you prefare
 - Twitter: [@twitterhandle](https://twitter.com/maths29)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/iwu-john-b92b01148/ )
 
-👤 **Fombi Favour**
-
-- GitHub: [Fombi-Favour](https://github.com/Fombi-Favour)
-- Twitter: [@FavourFombi](https://twitter.com/FavourFombi)
-- LinkedIn: [Fombi Favour](https://www.linkedin.com/in/fombi-favour/)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
