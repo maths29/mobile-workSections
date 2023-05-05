@@ -382,12 +382,13 @@ textarea::placeholder {
 .submit:active {
   background: #2230d2;
 }
+
 @media only screen and (min-width: 768px) {
   .nav-top {
     display: flex;
     align-items: center;
   }
-  
+
   .shape a {
     text-decoration: none;
     color: #344563;
@@ -419,7 +420,7 @@ textarea::placeholder {
 
   .head-text {
     width: 100%;
-    margin: 40px 0px;
+    margin: 40px 0;
     margin-top: -20px;
   }
 
@@ -428,7 +429,7 @@ textarea::placeholder {
     position: absolute;
   }
 
-  h1{
+  h1 {
     padding: 45px 20%;
     margin-left: 55px;
   }
@@ -537,7 +538,6 @@ textarea::placeholder {
     height: auto;
   }
 
-
   .firstS1 .info {
     font-style: normal;
     font-size: 18px;
@@ -549,7 +549,7 @@ textarea::placeholder {
     margin-bottom: 1px;
     margin-left: -17px;
   }
- 
+
   .info {
     font-style: normal;
     font-size: 18px;
@@ -668,7 +668,7 @@ textarea::placeholder {
     margin-left: -440px;
   }
 
-  pin:hover {
+  .pin:hover {
     background: #6070ff;
     color: #fff;
     border-radius: 12px;
@@ -863,15 +863,15 @@ textarea::placeholder {
     color: #fff;
   }
 
- .contact-space {
-   margin-top: 30px;
-   min-height: 80vh;
-   background: url(./Img/contact\ form\ background\ shapes.svg);
-   background-repeat: no-repeat;
-   background-position:  center;
-   background-size: contain;
-   text-align: center;
-   width: 100%;
+  .contact-space {
+    margin-top: 30px;
+    min-height: 80vh;
+    background: url(./Img/contact\ form\ background\ shapes.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    width: 100%;
   }
 
   .form2 {
@@ -879,7 +879,7 @@ textarea::placeholder {
     align-items: center;
   }
 
-    input {
+  input {
     background: #fff;
     border: 1px solid #cfd8dc;
     padding: 15px 0 15px 16px;
@@ -939,4 +939,3 @@ textarea::placeholder {
     color: #fff;
   }
 }
-
