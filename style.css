@@ -384,6 +384,10 @@ textarea::placeholder {
 }
 
 @media only screen and (min-width: 768px) {
+  header nav {
+    padding: 15px 100px;
+  }
+
   .nav-top {
     display: flex;
     align-items: center;
@@ -414,42 +418,41 @@ textarea::placeholder {
     gap: 20px;
     color: #6070ff;
     background-color: #fff;
-    padding-top: 17px;
-    padding-right: 100px;
   }
 
   .head-text {
-    width: 100%;
-    margin: 40px 0;
     margin-top: -20px;
+    min-height: 140vh;
+    padding: 10px 0;
   }
 
   #img {
     background-image: url(img/Header\ bg.svg);
     position: absolute;
-  }
-
-  h1 {
-    padding: 45px 20%;
-    margin-left: 55px;
+    top: 75px;
+    min-height: 80vh;
   }
 
   .pod {
-    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 110px;
+    padding: 10px 80px;
+    justify-content: center;
+    margin-left: 55px;
   }
 
   .headTest-p {
-    padding: 10px 18%;
     width: 75%;
-    margin-left: 88px;
   }
 
   .text-bottom {
-    margin-left: 382px;
+    margin-left: 0;
   }
 
   .structure {
-    width: 1160px;
+    width: 700px;
+    /* height: 590px; */
   }
 
   #tip {
@@ -459,7 +462,7 @@ textarea::placeholder {
     gap: 1%;
     box-sizing: border-box;
     background: #fff;
-    margin-top: 60px;
+    margin-top: 0;
   }
 
   #within {
@@ -518,24 +521,27 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 58%;
+    width: 78%;
     padding: 20px 20px 20px 0;
     margin: 20px;
-    margin-top: 60px;
+    margin-top: 20px;
   }
 
   .firstS2 {
     display: flex;
     flex-direction: column;
-    width: 58%;
+    width: 78%;
     margin: 20px;
     margin-left: 40px;
+    margin-top: -30px;
   }
 
   .inside {
     align-items: center;
-    margin: 16px;
+    margin: 7px;
     height: auto;
+    width: 80%;
+    margin-top: -25px;
   }
 
   .info {
@@ -545,9 +551,9 @@ textarea::placeholder {
     align-items: center;
     width: 90%;
     gap: 5%;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 1px;
-    margin-left: -17px;
+    margin-left: -45px;
   }
 
   .firstS1 .info {
@@ -559,13 +565,13 @@ textarea::placeholder {
     gap: 5%;
     margin-top: 15px;
     margin-bottom: 1px;
-    margin-left: -17px;
+    margin-left: -48px;
   }
 
   .cap {
-    letter-spacing: 2px;
-    margin-left: 14px;
-    margin-top: 30px;
+    letter-spacing: 0.37px;
+    margin-left: -10px;
+    margin-top: 20px;
   }
 
   .opy {
@@ -589,7 +595,7 @@ textarea::placeholder {
     padding: 0;
     gap: 5%;
     color: #6070ff;
-    margin-left: -230px;
+    margin-left: -80px;
     margin-top: 20px;
     justify-content: flex-end;
   }
@@ -610,7 +616,7 @@ textarea::placeholder {
     margin: 0;
     margin-top: 25px;
     margin-bottom: 80px;
-    margin-left: -125px;
+    margin-left: 15px;
     color: #6070ff;
   }
 
@@ -618,7 +624,7 @@ textarea::placeholder {
     margin: 0;
     margin-top: 20px;
     margin-bottom: 80px;
-    margin-left: -120px;
+    margin-left: 30px;
     color: #6070ff;
   }
 
@@ -647,7 +653,8 @@ textarea::placeholder {
   }
 
   .under1 {
-    margin-left: -80px;
+    margin-left: 80px;
+    
   }
 
   #mark {
@@ -690,18 +697,18 @@ textarea::placeholder {
     width: 80%;
     margin-top: 10px;
     margin-bottom: 1px;
-    margin-left: -60px;
+    margin-left: -80px;
   }
 
   .firstS1 #caption {
-    font-size: 40px;
+    font-size: 28px;
     font-style: bold;
     font-weight: 900;
     display: flex;
     align-items: center;
     color: #172b4d;
     width: 80%;
-    margin-top: -78px;
+    margin-top: 135px;
     margin-bottom: 1px;
     margin-left: -75px;
   }
@@ -755,7 +762,7 @@ textarea::placeholder {
     font-size: 16.4px;
     color: #344563;
     width: 90%;
-    margin-left: 76px;
+    margin-left: -256px;
     margin-right: 16px;
     margin-bottom: 5px;
   }
@@ -769,7 +776,7 @@ textarea::placeholder {
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 16px;
-    margin-left: -320px;
+    margin-left: -420px;
     padding: 0;
     width: 30%;
   }
@@ -802,11 +809,11 @@ textarea::placeholder {
     display: flex;
     flex-direction: row;
     gap: 8px;
-    margin-left: -75px;
+    margin-left: -133px;
   }
 
   .tap {
-    margin-left: -45px;
+    margin-left: -200px;
   }
 
   .smart .zip {
@@ -937,5 +944,179 @@ textarea::placeholder {
     background: #2230d2;
     border-radius: 12px;
     color: #fff;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .aboutSection {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border: 1px solid #dfe1e6;
+    padding: 14px;
+    margin-top: 15%;
+    background: #fff;
+    height: auto;
+    border-radius: 0 70px 0 0;
+    padding-bottom: 120px;
+    width: 100%;
+    gap: 0%;
+  }
+
+  .abt-sec {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.4px;
+    color: #344563;
+    width: 90%;
+    margin-left: -176px;
+    margin-right: 16px;
+    margin-bottom: 5px;
+  }
+
+  .social-abt {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-left: -390px;
+    padding: 0;
+    width: 30%;
+  }
+
+  .smart {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    margin-left: -135px;
+  }
+
+  .under {
+    list-style: none;
+    width: 50%;
+    padding: 0;
+  }
+
+  .under1 {
+    margin-left: 30px;
+  }
+
+  #mark {
+    border: none;
+    margin-left: -140px;
+  }
+
+  .tap {
+    margin-left: 60px;
+  }
+  .tab {
+    margin-left: 115px;
+  }
+
+  .structure {
+    width: 860px;
+  }
+
+  .inside {
+    align-items: center;
+    width: 380px;
+    margin-top: -70px;
+  }
+
+  .nativ {
+    font-style: normal;
+    font-size: 1em;
+    display: flex;
+    padding: 0;
+    gap: 5%;
+    color: #6070ff;
+    margin-left: -110px;
+    margin-top: 20px;
+    justify-content: flex-end;
+  }
+
+  .firstS1 .info {
+    font-style: normal;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    margin-left: -27px;
+  }
+
+  .cap {
+    letter-spacing: 0.37px;
+    margin-left: 7px;
+    margin-top: 18px;
+  }
+
+  .firstS1 #caption {
+    font-size: 38px;
+    font-style: bold;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+    margin-top: -20px;
+    margin-bottom: 1px;
+    margin-left: -68px;
+  }
+
+  .firstS1 .act {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: -3px;
+    color: #6070ff;
+  }
+
+  .firstS1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 58%;
+    padding: 20px 20px 20px 0;
+    margin: 20px;
+    margin-top: 10px;
+  }
+
+  .firstS2 {
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+    margin: 20px;
+    margin-left: 40px;
+    margin-top: -75px;
+  }
+
+  .firstS2 .act {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    margin-left: -3px;
+    color: #6070ff;
+  }
+
+  .text-bottom {
+    margin-left: 1px;
+  }
+
+  .nav-top {
+    display: flex;
+    align-items: center;
+  }
+
+  header nav {
+    padding: 15px 130px;
+  }
+
+  .head-text {
+    margin-top: -20px;
+    min-height: 100vh;
+    padding: 10px 0;
   }
 }
