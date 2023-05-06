@@ -1048,11 +1048,11 @@ textarea::placeholder {
   }
 
   .meet {
-    margin-left: -554px;
+    margin-left: -678px;
   }
 
   .pinned {
-    margin-left: -134px;
+    margin-left: -244px;
   }
 
   .social-abt {
@@ -1060,7 +1060,7 @@ textarea::placeholder {
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 16px;
-    margin-left: -490px;
+    margin-left: -550px;
     padding: 0;
     width: 30%;
   }
@@ -1251,7 +1251,7 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     color: #172b4d;
-    margin-left: -400px;
+    margin-left: -530px;
     margin-top: 80px;
     margin-bottom: 1px;
   }
