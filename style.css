@@ -1081,18 +1081,6 @@ textarea::placeholder {
     margin-top: 18px;
   }
 
-  .firstS1 #caption {
-    font-size: 38px;
-    font-style: bold;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    color: #172b4d;
-    margin-top: -20px;
-    margin-bottom: 1px;
-    margin-left: -68px;
-  }
-  
   #caption {
     font-size: 30px;
     font-style: bold;
@@ -1106,6 +1094,18 @@ textarea::placeholder {
     margin-left: -65px;
   }
 
+  .firstS1 #caption {
+    font-size: 38px;
+    font-style: bold;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+    margin-top: -20px;
+    margin-bottom: 1px;
+    margin-left: -68px;
+  }
+  
   .firstS1 .act {
     margin: 0;
     margin-top: 20px;
@@ -1155,11 +1155,11 @@ textarea::placeholder {
   }
 
   .head-text {
-   margin-top: -20px;
-   min-height: 100vh;
+    margin-top: -20px;
+    min-height: 100vh;
     padding: 10px 0;
   }
-  
+
   .sect {
     font-style: normal;
     font-weight: 700;
