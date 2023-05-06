@@ -114,7 +114,11 @@ header nav {
   font-weight: 700;
   color: #172b4d;
   margin-top: 9px;
-  margin-left: -200px;
+  margin-left: -50px;
+}
+
+.firstS1 .info {
+  margin-left: -40px;
 }
 
 .firstS2 .squire {
@@ -144,6 +148,10 @@ header nav {
   font-size: 13px;
   font-weight: 600;
   color: #7a869a;
+}
+
+.cap {
+  margin-left: 5px;
 }
 
 .cap p {
@@ -973,12 +981,20 @@ textarea::placeholder {
     margin-bottom: 5px;
   }
 
+  .meet {
+    margin-left: -554px;
+   }
+
+   .pinned {
+    margin-left: -134px;
+   }
+
   .social-abt {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 16px;
-    margin-left: -390px;
+    margin-left: -490px;
     padding: 0;
     width: 30%;
   }
@@ -1007,7 +1023,7 @@ textarea::placeholder {
   }
 
   .tap {
-    margin-left: 60px;
+    margin-left: -60px;
   }
 
   .tab {
@@ -1016,6 +1032,14 @@ textarea::placeholder {
 
   .structure {
     width: 860px;
+  }
+
+  #framework {
+    margin-right: 65px;
+  }
+
+  #skills {
+    margin-right: 65px;
   }
 
   .inside {
@@ -1063,6 +1087,19 @@ textarea::placeholder {
     margin-top: -20px;
     margin-bottom: 1px;
     margin-left: -68px;
+  }
+
+  #caption {
+    font-size: 30px;
+    font-style: bold;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    margin-left: -65px;
   }
 
   .firstS1 .act {
@@ -1117,5 +1154,21 @@ textarea::placeholder {
     margin-top: -20px;
     min-height: 100vh;
     padding: 10px 0;
+  }
+
+  .info {
+    margin-left: -24px;
+  }
+
+  .sect {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+    margin-left: -400px;
+    margin-top: 80px;
+    margin-bottom: 1px;
   }
 }
