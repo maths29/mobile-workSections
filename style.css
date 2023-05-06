@@ -117,6 +117,16 @@ header nav {
   margin-left: -50px;
 }
 
+.info {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -60px;
+}
+
 .firstS1 .info {
   margin-left: -40px;
 }
@@ -126,16 +136,6 @@ header nav {
   font-weight: 700;
   color: #172b4d;
   margin-top: 9px;
-}
-
-.info {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  gap: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: -60px;
 }
 
 .opy p {
@@ -985,9 +985,9 @@ textarea::placeholder {
     margin-left: -554px;
    }
 
-   .pinned {
+  .pinned {
     margin-left: -134px;
-   }
+  }
 
   .social-abt {
     display: flex;
@@ -1088,7 +1088,7 @@ textarea::placeholder {
     margin-bottom: 1px;
     margin-left: -68px;
   }
-
+  
   #caption {
     font-size: 30px;
     font-style: bold;
@@ -1155,7 +1155,7 @@ textarea::placeholder {
     min-height: 100vh;
     padding: 10px 0;
   }
-
+  
   .info {
     margin-left: -24px;
   }
