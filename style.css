@@ -1060,6 +1060,10 @@ textarea::placeholder {
     justify-content: flex-end;
   }
 
+  .info {
+    margin-left: -24px;
+  }
+
   .firstS1 .info {
     font-style: normal;
     font-size: 18px;
@@ -1151,15 +1155,11 @@ textarea::placeholder {
   }
 
   .head-text {
-    margin-top: -20px;
-    min-height: 100vh;
+   margin-top: -20px;
+   min-height: 100vh;
     padding: 10px 0;
   }
   
-  .info {
-    margin-left: -24px;
-  }
-
   .sect {
     font-style: normal;
     font-weight: 700;
