@@ -22,6 +22,16 @@ header nav {
   padding: 16px 14px;
 }
 
+.active {
+  animation: 3s spin;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
 .nav-top {
   display: flex;
   align-items: center;
@@ -61,6 +71,26 @@ header nav {
   color: #172b4d;
   padding-top: 70px;
   padding-bottom: 12px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  75% {
+    font-size: 200%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .headTest-p {
@@ -1068,6 +1098,24 @@ textarea::placeholder {
 
   .structure {
     width: 860px;
+  }
+
+  .inner {
+    transition: 0.4s;
+  }
+
+  .inner:hover {
+    animation: 3s alternate-reverse popup;
+  }
+
+  @keyframes popup {
+    0% {
+      width: 800px;
+    }
+
+    100% {
+      width: 860px;
+    }
   }
 
   #framework {
