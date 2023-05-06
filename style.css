@@ -522,7 +522,7 @@ textarea::placeholder {
     0% {
       width: 515px;
     }
-  
+
     100% {
       width: 700px;
     }
