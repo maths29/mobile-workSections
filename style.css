@@ -22,6 +22,16 @@ header nav {
   padding: 16px 14px;
 }
 
+.active {
+  animation: 3s spin;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
+}
+
 .nav-top {
   display: flex;
   align-items: center;
@@ -61,6 +71,26 @@ header nav {
   color: #172b4d;
   padding-top: 70px;
   padding-bottom: 12px;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+
+  75% {
+    font-size: 200%;
+    margin-left: 25%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
 .headTest-p {
@@ -142,6 +172,24 @@ header nav {
   font-size: 13px;
   font-weight: 600;
   color: #344563;
+}
+
+.inner {
+  transition: 0.4s;
+}
+
+.inner:hover {
+  animation: 3s alternate-reverse popup;
+}
+
+@keyframes popup {
+  0% {
+    width: 515px;
+  }
+
+  100% {
+    width: 368px;
+  }
 }
 
 .type p {
@@ -460,6 +508,24 @@ textarea::placeholder {
 
   .structure {
     width: 700px;
+  }
+
+  .inner {
+    transition: 0.4s;
+  }
+
+  .inner:hover {
+    animation: 3s alternate-reverse popup;
+  }
+
+  @keyframes popup {
+    0% {
+      width: 515px;
+    }
+
+    100% {
+      width: 700px;
+    }
   }
 
   #tip {
@@ -982,11 +1048,11 @@ textarea::placeholder {
   }
 
   .meet {
-    margin-left: -554px;
+    margin-left: -678px;
   }
 
   .pinned {
-    margin-left: -134px;
+    margin-left: -244px;
   }
 
   .social-abt {
@@ -994,7 +1060,7 @@ textarea::placeholder {
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 16px;
-    margin-left: -490px;
+    margin-left: -550px;
     padding: 0;
     width: 30%;
   }
@@ -1032,6 +1098,24 @@ textarea::placeholder {
 
   .structure {
     width: 860px;
+  }
+
+  .inner {
+    transition: 0.4s;
+  }
+
+  .inner:hover {
+    animation: 3s alternate-reverse popup;
+  }
+
+  @keyframes popup {
+    0% {
+      width: 800px;
+    }
+
+    100% {
+      width: 860px;
+    }
   }
 
   #framework {
@@ -1167,7 +1251,7 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     color: #172b4d;
-    margin-left: -400px;
+    margin-left: -530px;
     margin-top: 80px;
     margin-bottom: 1px;
   }
