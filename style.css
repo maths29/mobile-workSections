@@ -144,6 +144,24 @@ header nav {
   color: #344563;
 }
 
+.inner {
+  transition: 0.4s;
+}
+
+.inner:hover {
+  animation: 3s alternate-reverse popup;
+}
+
+@keyframes popup {
+  0% {
+    width: 515px;
+  }
+
+  100% {
+    width: 368px;
+  }
+}
+
 .type p {
   font-size: 13px;
   font-weight: 600;
@@ -460,6 +478,24 @@ textarea::placeholder {
 
   .structure {
     width: 700px;
+  }
+
+  .inner {
+    transition: 0.4s;
+  }
+
+  .inner:hover {
+    animation: 3s alternate-reverse popup;
+  }
+
+  @keyframes popup {
+    0% {
+      width: 515px;
+    }
+  
+    100% {
+      width: 700px;
+    }
   }
 
   #tip {
