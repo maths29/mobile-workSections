@@ -118,6 +118,7 @@ You can deploy this project by using any hosting services you prefare
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **A full website**
+-[ ] **A model**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
