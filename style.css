@@ -1255,4 +1255,15 @@ textarea::placeholder {
     margin-top: 80px;
     margin-bottom: 1px;
   }
+
+  .contact-space {
+    margin-top: 30px;
+    min-height: 80vh;
+    background: url(./Img/contact\ form\ background\ shapes.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    width: 100%;
+  }
 }
