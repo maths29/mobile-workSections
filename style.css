@@ -1042,17 +1042,17 @@ textarea::placeholder {
     font-size: 16.4px;
     color: #344563;
     width: 90%;
-    margin-left: -176px;
+    margin-left: -200px;
     margin-right: 16px;
     margin-bottom: 5px;
   }
 
   .meet {
-    margin-left: -678px;
+    margin-left: -580px;
   }
 
   .pinned {
-    margin-left: -244px;
+    margin-left: -165px;
   }
 
   .social-abt {
@@ -1060,7 +1060,7 @@ textarea::placeholder {
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 16px;
-    margin-left: -550px;
+    margin-left: -520px;
     padding: 0;
     width: 30%;
   }
@@ -1119,11 +1119,11 @@ textarea::placeholder {
   }
 
   #framework {
-    margin-right: 130px;
+    margin-right: 70px;
   }
 
   #skills {
-    margin-right: 135px;
+    margin-right: 70px;
   }
 
   .inside {
@@ -1251,7 +1251,7 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     color: #172b4d;
-    margin-left: -530px;
+    margin-left: -430px;
     margin-top: 80px;
     margin-bottom: 1px;
   }
