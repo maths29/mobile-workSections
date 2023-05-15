@@ -12,13 +12,15 @@
     <header>
       <nav>
         <a href="#home" class="active"><img src="img/My Logo.png" /></a>
-        <div class="nav-top">
+        <div class="nav-top" id="myTopnav">
           <div class="shape">
-            <a href="#">portfolio</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#portfolio" class="active">portfolio</a>
+            <a href="#About" class="active">About</a>
+            <a href="#Contac" class="active">Contact</a>
           </div>
-          <img src="img/Union.png" />
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
         
       </nav>
@@ -427,5 +429,6 @@
       src="https://kit.fontawesome.com/fdfc6b7a0c.js"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
