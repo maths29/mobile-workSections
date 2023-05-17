@@ -41,20 +41,11 @@ header nav {
   display: none;
 }
 
-/* .top-nav {
-  /* background-color: #333; */
-  /* overflow: hidden; */
-} */
-
-/* .top-nav a {
-  float: right;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 10px 12px;
-  text-decoration: none;
-  font-size: 17px;
-} */
+.top-nav {
+  position: absolute;
+  background: #f3f3f3;
+  color: #253858;
+}
 
 .shape a {
   text-decoration: none;
@@ -74,8 +65,20 @@ header nav {
   color: white;
 }
 
-.top-nav .icon {
+.close-button {
   display: none;
+}
+
+#close {
+  float: right;
+  color: #f3f3f3;
+  padding: 20px;
+
+}
+
+#mobile-nav ul li a{
+text-decoration: none;
+color: white;
 }
 
 .head-text {
@@ -128,9 +131,28 @@ header nav {
   color: #344563;
 }
 
-.shape1 {
+.shape {
   display: none;
 }
+
+#mobile-nav{
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  background-color: blue;
+  position: absolute;
+}
+
+#mobile-nav ul {
+  position: absolute;
+  padding: 50px;
+  right: 0;
+}
+
+#mobile-nav ul li {
+ list-style: none;
+}
+
 
 .text-bottom {
   display: flex;
@@ -468,9 +490,9 @@ textarea::placeholder {
   background: #2230d2;
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
-  .top-nav a { display: none; }
+  .mobile-nav ul li { display: none; }
 
   .top-nav a.icon {
     float: right;
@@ -489,7 +511,7 @@ textarea::placeholder {
     display: block;
     text-align: left;
   }
-} */
+}
 
 @media only screen and (min-width: 768px) {
   header nav {
