@@ -257,6 +257,10 @@ header nav {
   display: none;
 }
 
+.blur {
+  filter: blur(11px);
+}
+
 .top-nav {
   position: absolute;
   background: #f3f3f3;
@@ -565,13 +569,14 @@ header nav {
                    Responsive Mobile Menu
   ====================================================== */
 .overlay-menu {
-  background: #4752b7;
+  background: rgba(96, 112, 255, 0.9);
+  mix-blend-mode: multiply;
   backdrop-filter: blur(8px);
   color: white;
   display: flex;
   align-items: center;
   justify-content: left;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   padding-right: 15px;
@@ -585,18 +590,16 @@ header nav {
 .overlay-menu ul,
 .overlay-menu li {
   display: block;
-  position: relative;
+  /* position: relative; */
 }
 
 .overlay-menu li a {
   display: block;
   font-size: 1.8em;
   letter-spacing: 4px;
-
-  /*   opacity: 0; */
   padding: 10px 0;
+  margin: 0;
   text-align: left;
-  text-transform: uppercase;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 
