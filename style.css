@@ -12,17 +12,39 @@
   margin-right: 5%;
 }
 
-.inner .inside{
+.inner .inside {
   max-width: 100%;
 }
 
 /* Navbar section */
+
+.overlay-menu ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.overlay-menu li a {
+  font-size: 1.8em;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
 
 .nav div.logo a {
   text-decoration: none;
   color: #fff;
   font-size: 1.8em;
   text-transform: uppercase;
+}
+
+.overlay-menu li a:active {
+  border-bottom: 2px solid #fff;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .nav div.main_list ul li a {
@@ -327,7 +349,7 @@ header nav {
   #navbar ul {
     display: none;
   }
-  
+
   .menuIcon {
     cursor: pointer;
     display: block;
@@ -372,32 +394,10 @@ header nav {
   backdrop-filter: blur(10px);
 }
 
-.overlay-menu ul {
-  display: flex;
-  list-style-type: none;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.overlay-menu li a {
-  font-size: 1.8em;
-  letter-spacing: 4px;
-  text-decoration: none;
-  color: #fff;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
-}
-
 .overlay-menu i {
   margin-left: auto;
   font-size: 20px;
   color: #fff;
-}
-
-.overlay-menu li a:active {
-  border-bottom: 2px solid #fff;
-  -webkit-transition: color 0.3s ease;
-  transition: color 0.3s ease;
 }
 
 #img {
@@ -467,7 +467,8 @@ header nav {
   fill: none;
   stroke: black;
   stroke-width: 6;
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition:
+    stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
