@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <title>my portfolio project</title>
-    <script src="script.js"></script>
   </head>
  
   <body>
@@ -23,7 +25,8 @@
           </div>
       
           <!-- Navbar Links -->
-          <ul id="menu">
+          <div id="blur-bg" class="blur-bg"></div>
+          <ul id="menu" class="desktop-menu">
             <li><a href="#portfolio">Portfolio</a></li><!--
          --><li><a href="#about">About</a></li><!--
          --><li><a href="#contact">Contact</a></li>
@@ -34,16 +37,16 @@
       
       <!-- Menu Icon -->
       <div class="menuIcon">
-        <span class="icon icon-bars"></span>
-        <span class="icon icon-bars overlay"></span>
+        <i class="fa fa-bars"></i>
       </div>
       
       
       <div class="overlay-menu">
-        <ul id="menu">
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul>
+          <i id="close-menu" class="fas fa-times"></i>
+            <li><a id="open-link" href="#portfolio">Portfolio</a></li>
+            <li><a id="open-link" href="#about">About</a></li>
+            <li><a id="open-link" href="#contact">Contact</a></li>
           </ul>
       </div>
     
@@ -387,7 +390,7 @@
               <ul class="smart">
                 <li class="zip"><img src="./shap/js.png" />Javascript</li>
                 <li class="zip"><img src="./shap/html.png" />HTML</li>
-                <li class="zip"><img src="/shap/css.png" />CSS</li>
+                <li class="zip"><img src="./shap/css.png" />CSS</li>
               </ul>
             </li>
             <li>
@@ -456,30 +459,5 @@
 
   </body>
 
-  <script>
-       let menuIcon = document.querySelector('.menuIcon');
-        let nav = document.querySelector('.overlay-menu');
-
-        menuIcon.addEventListener('click', () => {
-            if (nav.style.transform != 'translateX(0%)') {
-                nav.style.transform = 'translateX(0%)';
-                nav.style.transition = 'transform 0.2s ease-out';
-            } else { 
-                nav.style.transform = 'translateX(-100%)';
-                nav.style.transition = 'transform 0.2s ease-out';
-            }
-        });
-
-
-        // Toggle Menu Icon ========================================
-        let toggleIcon = document.querySelector('.menuIcon');
-
-        toggleIcon.addEventListener('click', () => {
-            if (toggleIcon.className != 'menuIcon toggle') {
-                toggleIcon.className += ' toggle';
-            } else {
-                toggleIcon.className = 'menuIcon';
-            }
-        });
-  </script>
+  <script src="script.js"></script>
 </html>

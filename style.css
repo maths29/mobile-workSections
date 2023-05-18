@@ -12,6 +12,10 @@
   margin-right: 5%;
 }
 
+.inner .inside{
+  max-width: 100%;
+}
+
 /* Navbar section */
 
 .nav div.logo a {
@@ -147,82 +151,6 @@
   background-color: #ddd;
 }
 
-/* Medai qurey section */
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    margin: 0;
-  }
-
-  .nav div.logo {
-    margin-left: 15px;
-  }
-
-  .nav div.main_list {
-    width: 100%;
-    margin-top: 65px;
-    height: 0;
-    overflow: hidden;
-  }
-
-  .nav div.show_list {
-    height: 200px;
-  }
-
-  .nav div.main_list ul {
-    flex-direction: column;
-    width: 100%;
-    height: 200px;
-    top: 80px;
-    right: 0;
-    left: 0;
-  }
-
-  a {
-    color: inherit;
-    font-family: inherit;
-    font-size: inherit;
-    text-decoration: none;
-  }
-
-  .shape a {
-    text-decoration: none;
-    color: #344563;
-    font-size: 15px;
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .top-nav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav div.main_list ul li {
-    width: 100%;
-    height: 40px;
-    background-color: rgba(0, 0, 255, 0.8);
-  }
-
-  .nav div.main_list ul li a {
-    text-align: center;
-    line-height: 40px;
-    width: 100%;
-    height: 40px;
-    display: table;
-  }
-
-  .nav div.media_button {
-    display: block;
-  }
-}
-
 body {
   background: #e5e5e5;
 }
@@ -297,11 +225,6 @@ header nav {
   -webkit-transition: all 0.5s ease;
 }
 
-#mobile-nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-
 .head-text {
   background: #fff;
   border-bottom-left-radius: 60px;
@@ -329,18 +252,6 @@ header nav {
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .nav-wrapper {
-    width: 90%;
-  }
-}
-
-@media (max-width: 638px) {
-  .nav-wrapper {
-    width: 100%;
-  }
-}
-
 .logo {
   float: left;
   margin-left: 28px;
@@ -348,12 +259,6 @@ header nav {
   height: 60px;
   letter-spacing: 1px;
   text-transform: uppercase;
-}
-
-@media (max-width: 768px) {
-  .logo {
-    /*       margin-left: 5px; */
-  }
 }
 
 #navbar ul {
@@ -366,18 +271,6 @@ header nav {
   text-align: right;
   transition: transform 0.5s ease-out;
   -webkit-transition: transform 0.5s ease-out;
-}
-
-@media (max-width: 640px) {
-  #navbar ul {
-    display: none;
-  }
-}
-
-@media (orientation: landscape) {
-  #navbar ul {
-    display: inline-block;
-  }
 }
 
 #navbar li {
@@ -431,6 +324,10 @@ header nav {
                     Mobile Menu Menu Icon
   ====================================================== */
 @media (max-width: 640px) {
+  #navbar ul {
+    display: none;
+  }
+  
   .menuIcon {
     cursor: pointer;
     display: block;
@@ -442,126 +339,9 @@ header nav {
     z-index: 12;
   }
 
-  /* Icon Bars */
-  .icon-bars {
-    background: rgb(13, 26, 38);
-    position: absolute;
-    left: 1px;
-    top: 45%;
-    height: 2px;
-    width: 20px;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-  }
-
-  .icon-bars::before {
-    background: rgb(13, 26, 38);
-    content: "";
-    position: absolute;
-    left: 0;
-    top: -8px;
-    height: 2px;
-    width: 20px;
-
-    /*     -webkit-transition: top 0.2s ease 0.3s;
-    transition: top 0.2s ease 0.3s; */
-    -webkit-transition: 0.3s width 0.4s;
-    transition: 0.3s width 0.4s;
-  }
-
-  .icon-bars::after {
-    margin-top: 0;
-    background: rgb(13, 26, 38);
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    height: 2px;
-    width: 20px;
-
-    /*     -webkit-transition: top 0.2s ease 0.3s;
-    transition: top 0.2s ease 0.3s; */
-    -webkit-transition: 0.3s width 0.4s;
-    transition: 0.3s width 0.4s;
-  }
-
-  /* Bars Shadows */
-
-  /* .icon-bars.overlay {
-    background: rgb(97, 114, 129);
-    background: rgb(183, 199, 211);
-    width: 20px;
-    animation: middleBar 3s infinite 0.5s;
-    -webkit-animation: middleBar 3s infinite 0.5s;
-  } @keyframes middleBar {
-      0% {width: 0px}
-      50% {width: 20px}
-      100% {width: 0px}
-    } @-webkit-keyframes middleBar {
-        0% {width: 0px}
-        50% {width: 20px}
-        100% {width: 0px}
-      }
-
-  .icon-bars.overlay::before {
-    background: rgb(97, 114, 129);
-    background: rgb(183, 199, 211);
-    width: 10px;
-    animation: topBar 3s infinite 0.2s;
-    -webkit-animation: topBar 3s infinite 0s;
-  } @keyframes topBar {
-      0% {width: 0px}
-      50% {width: 10px}
-      100% {width: 0px}
-    } @-webkit-keyframes topBar {
-        0% {width: 0px}
-        50% {width: 10px}
-        100% {width: 0px}
-      }
-
-  .icon-bars.overlay::after {
-    background: rgb(97, 114, 129);
-    background: rgb(183, 199, 211);
-    width: 15px;
-    animation: bottomBar 3s infinite 1s;
-    -webkit-animation: bottomBar 3s infinite 1s;
-  } @keyframes bottomBar {
-      0% {width: 0px}
-      50% {width: 15px}
-      100% {width: 0px}
-    } @-webkit-keyframes bottomBar {
-        0% {width: 0px}
-        50% {width: 15px}
-        100% {width: 0px}
-      }
-*/
-
-  /* Toggle Menu Icon */
-  .menuIcon.toggle .icon-bars {
-    top: 5px;
-    transform: translate3d(0, 5px, 0) rotate(135deg);
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0.1s;
-  }
-
-  .menuIcon.toggle .icon-bars::before {
-    top: 0;
-    transition-delay: 0.1s;
-    opacity: 0;
-  }
-
-  .menuIcon.toggle .icon-bars::after {
-    top: 10px;
-    transform: translate3d(0, -10px, 0) rotate(-270deg);
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    transition-delay: 0.1s;
-  }
-
-  .menuIcon.toggle .icon-bars.overlay {
-    width: 20px;
-    opacity: 0;
-    -webkit-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
+  .menuIcon i {
+    color: #6070ff;
+    font-size: 20px;
   }
 }
 
@@ -569,47 +349,53 @@ header nav {
                    Responsive Mobile Menu
   ====================================================== */
 .overlay-menu {
-  background: rgba(96, 112, 255, 0.9);
-  mix-blend-mode: multiply;
-  backdrop-filter: blur(8px);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: left;
   position: fixed;
   top: 0;
+  left: 0;
   right: 0;
-  padding-right: 15px;
-  transform: translateX(-100%);
-  width: 100vw;
-  height: 100vh;
-  -webkit-transition: transform 0.2s ease-out;
-  transition: transform 0.2s ease-out;
+  bottom: 0;
+  z-index: 20;
+  background-color: rgba(96, 112, 255, 0.85);
+  padding: 3em;
+  display: none;
+  flex-direction: column;
 }
 
-.overlay-menu ul,
-.overlay-menu li {
-  display: block;
-  /* position: relative; */
+.blur-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+.overlay-menu ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .overlay-menu li a {
-  display: block;
   font-size: 1.8em;
   letter-spacing: 4px;
-  padding: 10px 0;
-  margin: 0;
-  text-align: left;
+  text-decoration: none;
+  color: #fff;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
-
-  /*   -webkit-transition: 0.2s opacity 0.2s ease-out;
-  transition: 0.2s opacity 0.2s ease-out; */
 }
 
-.overlay-menu li a:hover,
+.overlay-menu i {
+  margin-left: auto;
+  font-size: 20px;
+  color: #fff;
+}
+
 .overlay-menu li a:active {
-  color: rgb(28, 121, 184);
+  border-bottom: 2px solid #fff;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
@@ -657,27 +443,9 @@ header nav {
   color: #344563;
 }
 
-.shape {
+/* .shape {
   display: none;
-}
-
-#mobile-nav {
-  display: none;
-  height: 100vh;
-  width: 100vw;
-  background-color: blue;
-  position: absolute;
-}
-
-#mobile-nav ul {
-  position: absolute;
-  padding: 50px;
-  right: 0;
-}
-
-#mobile-nav ul li {
-  list-style: none;
-}
+} */
 
 .text-bottom {
   display: flex;
@@ -699,8 +467,7 @@ header nav {
   fill: none;
   stroke: black;
   stroke-width: 6;
-  transition:
-    stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
     stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1064,33 +831,6 @@ textarea::placeholder {
 
 .submit:active {
   background: #2230d2;
-}
-
-@media screen and (max-width: 768px) {
-  .mobile-nav ul li {
-    display: none;
-  }
-
-  .top-nav a.icon {
-    float: right;
-    display: block;
-  }
-
-  .top-nav.responsive {
-    position: relative;
-  }
-
-  .top-nav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .top-nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
 }
 
 @media only screen and (min-width: 768px) {
