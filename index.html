@@ -6,38 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>my portfolio project</title>
-    
+    <script src="script.js"></script>
   </head>
-
+ 
   <body>
-   
-    <div id="mobile-nav">
-      <i onclick="closeFun()" class="fa fa-close icon" id="close"></i>
-      
-      <ul>
-        <li><a href="#tip">Portfolio</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Contact">Contact</a> </li>
-      </ul>
-    </div>
+    
     <header>
-      <nav>
-        <a href="#home" class="active"><img src="img/My Logo.png" /></a>
+ 
       
-        <div class="nav-top">
-          <div class="shape">
-            <a href="#">portfolio</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-            </div>
-       
-            <i onclick="myFunction()" class="fa fa-bars icon" id="open"></i>
-            
+      <nav id="navbar" class="">
+        <div class="nav-wrapper">
+          <!-- Navbar Logo -->
+          <div class="logo">
+            <!-- Logo Placeholder for Inlustration -->
+            <a  href="#home" class="active"><img src="img/My Logo.png"></a>
           </div>
-         
+      
+          <!-- Navbar Links -->
+          <ul id="menu">
+            <li><a href="#portfolio">portfolio</a></li><!--
+         --><li><a href="#about">About</a></li><!--
+         --><li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
       
+      
+      <!-- Menu Icon -->
+      <div class="menuIcon">
+        <span class="icon icon-bars"></span>
+        <span class="icon icon-bars overlay"></span>
+      </div>
+      
+      
+      <div class="overlay-menu">
+        <ul id="menu">
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+      </div>
     
+
     </header>
     <section class="head-text">
       <div id="img" class="">
@@ -71,10 +81,10 @@
       </div>
       </div>
     </section>
-
+  
     <section class="main">
       <div>
-        <section class="structure" >
+        <section class="structure" id="portfolio">
           <div class="inner" id="tip">
             <div class="first">
               <img class="inside" alt="#" src="./cards/Tonic.png" />
@@ -332,7 +342,7 @@
           </div>
         </section>
       </div>
-      <section id="About" class="aboutSection">
+      <section class="aboutSection" id="about">
         <div class="sec">
           <div class="sec1">
             <h3 class="sect">About Myself</h3>
@@ -395,7 +405,7 @@
           </ul>
         </div>
       </section>
-      <section class="form" id="Contact">
+      <section class="form" id="contact">
         <div class="contact-space">
           <h3 class="contact-space1">Contact me</h3>
           <p class="contact-space2">
@@ -442,6 +452,34 @@
       src="https://kit.fontawesome.com/fdfc6b7a0c.js"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js"></script>
+
+
   </body>
+
+  <script>
+       let menuIcon = document.querySelector('.menuIcon');
+        let nav = document.querySelector('.overlay-menu');
+
+        menuIcon.addEventListener('click', () => {
+            if (nav.style.transform != 'translateX(0%)') {
+                nav.style.transform = 'translateX(0%)';
+                nav.style.transition = 'transform 0.2s ease-out';
+            } else { 
+                nav.style.transform = 'translateX(-100%)';
+                nav.style.transition = 'transform 0.2s ease-out';
+            }
+        });
+
+
+        // Toggle Menu Icon ========================================
+        let toggleIcon = document.querySelector('.menuIcon');
+
+        toggleIcon.addEventListener('click', () => {
+            if (toggleIcon.className != 'menuIcon toggle') {
+                toggleIcon.className += ' toggle';
+            } else {
+                toggleIcon.className = 'menuIcon';
+            }
+        });
+  </script>
 </html>
