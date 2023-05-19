@@ -32,8 +32,7 @@ window.onresize = () => {
   }
 };
 
- // Retrieve data from local storage and fill the form
- function fillFormData() {
+function fillFormData() {
   const formData = JSON.parse(localStorage.getItem('contactFormData'));
   if (formData) {
     document.querySelector('#full-name').value = formData.name || '';
@@ -42,7 +41,6 @@ window.onresize = () => {
   }
 }
 
-// Save form data to local storage
 function saveFormData() {
   const name = document.querySelector('#full-name').value;
   const email = document.querySelector('#email').value;
@@ -51,11 +49,9 @@ function saveFormData() {
   localStorage.setItem('contactFormData', JSON.stringify(formData));
 }
 
-// Add event listeners to input fields
 const inputFields = document.querySelectorAll('#Contact input, #Contact textarea');
 inputFields.forEach((inputField) => {
   inputField.addEventListener('input', saveFormData);
 });
 
-// Fill the form with data on page load
 fillFormData();
