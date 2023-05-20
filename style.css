@@ -70,6 +70,12 @@ img {
   font-size: 40px;
 }
 
+.modal h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #091e42;
+}
+
 .navbar .desktop-nav h2 {
   font-weight: 600;
   color: #6070ff;
@@ -353,7 +359,7 @@ img {
   display: none;
   position: fixed;
   z-index: 10;
-  padding-top: 100px;
+  padding: 77px 142px;
   left: 0;
   right: 0;
   top: 0;
@@ -366,6 +372,7 @@ img {
   background: #fff;
   max-width: 1156px;
   padding: 20px;
+  margin: auto;
   border-radius: 16px;
   border: 1px solid #ebecf0;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -375,6 +382,19 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.modal .programs {
+  margin-bottom: 20px;
+}
+
+.modal .line {
+  border-top: 2px solid #ebecf0;
+  margin-top: 20px;
+}
+
+.modal .btn-outline {
+  margin-right: 20px;
 }
 
 .modal .modal-details {
