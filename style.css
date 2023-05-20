@@ -70,6 +70,12 @@ img {
   font-size: 40px;
 }
 
+.modal h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #091e42;
+}
+
 .navbar .desktop-nav h2 {
   font-weight: 600;
   color: #6070ff;
@@ -382,14 +388,8 @@ img {
   margin-bottom: 20px;
 }
 
-.modal h2 {
-  font-weight: 700;
-  font-size: 40px;
-  color: #091e42;
-}
-
 .modal .line {
-  border-top: 2px solid #EBECF0;
+  border-top: 2px solid #ebecf0;
   margin-top: 20px;
 }
 
