@@ -32,6 +32,7 @@ window.onresize = () => {
   }
 };
 
+
 const form = document.querySelector('form');
 const errorMessage = document.createElement('p');
 errorMessage.style.color = 'red';
@@ -39,19 +40,17 @@ errorMessage.style.color = 'red';
 function validateEmail() {
   const emailInput = document.querySelector('input[type="email"]');
   const email = emailInput.value;
-
+  
   if (email !== email.toLowerCase()) {
     errorMessage.textContent = 'Please enter the email address in lowercase.';
     form.appendChild(errorMessage);
     return false;
   }
-
   errorMessage.textContent = '';
   return true;
 }
-
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', function(event) {
+  // Validate the email field
   if (!validateEmail()) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent form submission
   }
-});
