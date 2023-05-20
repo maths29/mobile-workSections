@@ -50,7 +50,6 @@ function validateEmail() {
   return true;
 }
 form.addEventListener('submit', function(event) {
-  // Validate the email field
   if (!validateEmail()) {
-    event.preventDefault(); // Prevent form submission
+    event.preventDefault(); 
   }
