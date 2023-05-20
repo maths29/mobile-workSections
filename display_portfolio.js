@@ -6,9 +6,9 @@ const projectsData = [
     platform: 'Web',
     year: '2022',
     description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required. ',
     descriptionlong:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ",
     featuredImage: 'cards/1.png',
     technologies: ['HTML', 'CSS', 'ReactJs'],
     linkToLiveVersion: '#',
@@ -21,9 +21,9 @@ const projectsData = [
     platform: 'Web',
     year: '2022',
     description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     descriptionlong:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     featuredImage: 'cards/2.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     linkToLiveVersion: '#',
@@ -36,9 +36,9 @@ const projectsData = [
     platform: 'Web',
     year: '2022',
     description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     descriptionlong:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     featuredImage: 'cards/3.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     linkToLiveVersion: '#',
@@ -51,15 +51,16 @@ const projectsData = [
     platform: 'Web',
     year: '2022',
     description:
-        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     descriptionlong:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.',
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     featuredImage: 'cards/4.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     linkToLiveVersion: '#',
     linkToSource: '#',
-  }];
-// to populate the technology
+  },
+];
+
 const generateTechnologyTags = (technologies) => {
   const html = technologies
     .map((technology) => `<li>${technology}</li>`)
@@ -81,14 +82,18 @@ projectsData.forEach((project) => {
             <h2>${project.name}</h2>
             <ul class="programs">
               <li>${project.platform}</li>
-              <li><i class="fa fa-circle"></i>${project.role}<i class="fa fa-circle"></i></li>
+              <li><i class="fa fa-circle"></i>${
+  project.role
+}<i class="fa fa-circle"></i></li>
               <li>${project.year}</li>
             </ul>
             <p>${project.description}</p>
             <ul class="tags">
               ${generateTechnologyTags(project.technologies)}
             </ul>
-            <button id="open-project-popup-${project.id}" class="btn-outline">See project</button>
+            <button id="open-project-popup-${
+  project.id
+}" class="btn-outline">See project</button>
           </div>
         </div>
       `;
@@ -107,7 +112,7 @@ const generateProjectPopUps = (projectDetails) => {
     linkToLiveVersion,
     linkToSource,
   } = projectDetails;
-  // to return the html to the index
+
   return `
       <div class="container">
           <div class="modal-card">
