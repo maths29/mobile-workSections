@@ -31,3 +31,27 @@ window.onresize = () => {
     document.body.style.overflow = 'auto';
   }
 };
+
+const form = document.querySelector('form');
+const errorMessage = document.createElement('p');
+errorMessage.style.color = 'red';
+
+function validateEmail() {
+  const emailInput = document.querySelector('input[type="email"]');
+  const email = emailInput.value;
+
+  if (email !== email.toLowerCase()) {
+    errorMessage.textContent = 'Please enter the email address in lowercase.';
+    form.appendChild(errorMessage);
+    return false;
+  }
+
+  errorMessage.textContent = '';
+  return true;
+}
+
+form.addEventListener('submit', (event) => {
+  if (!validateEmail()) {
+    event.preventDefault();
+  }
+});
