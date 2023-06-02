@@ -171,3 +171,5 @@ window.onclick = (e) => {
     document.body.style.overflow = 'auto';
   }
 };
+const title = null;
+console.log (title.color);
